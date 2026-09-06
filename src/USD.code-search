@@ -1,0 +1,22 @@
+# Query: USD
+# ContextLines: 1
+
+4 results - 2 files
+
+package-lock.json:
+  2428        "resolved": "https://registry.npmjs.org/resolve/-/resolve-1.22.12.tgz",
+  2429:       "integrity": "sha512-TyeJ1zif53BPfHootBGwPRYT1RUt6oGWsaQr8UyZW/eAm9bKoijtvruSDEmZHm92CwS9nj7/fWttqPCgzep8CA==",
+  2430        "dev": true,
+
+  2550        "resolved": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz",
+  2551:       "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==",
+  2552        "dev": true,
+
+src\utils\formatters.js:
+   1  /**
+   2:  * Format price to INR currency string
+   3   * @param {number} amount
+
+   9      style: 'currency',
+  10:     currency: 'INR',
+  11      minimumFractionDigits: 2,
