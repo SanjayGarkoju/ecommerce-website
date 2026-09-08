@@ -5,7 +5,7 @@
  */
 export const formatPrice = (amount) => {
   if (amount === undefined || amount === null) return 'RS 0.00';
-  return new Intl.NumberFormat('en-INR', {
+  return new Intl.NumberFormat('en-IN', {
     style: 'currency',
     currency: 'INR',
     minimumFractionDigits: 2,
@@ -21,7 +21,7 @@ export const formatPrice = (amount) => {
 export const formatDate = (dateInput) => {
   if (!dateInput) return '';
   const date = new Date(dateInput);
-  return new Intl.DateTimeFormat('en-INR', {
+  return new Intl.DateTimeFormat('en-IN', {
     month: 'short',
     day: 'numeric',
     year: 'numeric',
