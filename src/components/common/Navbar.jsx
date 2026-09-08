@@ -52,7 +52,7 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5 shrink-0 group">
+          <Link to="/" className="flex items-center gap-1.5 shrink min-w-0 group">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
               <ShoppingBag className="w-5 h-5" />
             </div>
@@ -105,7 +105,7 @@ export const Navbar = () => {
           </div>
 
           {/* Right Action Icons */}
-          <div className="flex items-center gap-1 sm:gap-2">
+          <div className="flex items-center gap-0 sm:gap-1">
             {/* Mobile Search Toggle Button */}
             <button
               onClick={() => setMobileSearchOpen(!mobileSearchOpen)}
@@ -216,7 +216,7 @@ export const Navbar = () => {
             {/* Mobile Drawer Trigger */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2.5 text-slate-600 hover:text-slate-900 rounded-xl hover:bg-slate-100"
+              className="lg:hidden p-1.5 text-slate-600 hover:text-slate-900 rounded-xl hover:bg-slate-100"
               aria-label="Toggle Menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
