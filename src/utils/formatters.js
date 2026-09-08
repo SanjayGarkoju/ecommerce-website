@@ -1,13 +1,13 @@
 /**
- * Format price to USD currency string
+ * Format price to INR currency string
  * @param {number} amount
  * @returns {string}
  */
 export const formatPrice = (amount) => {
-  if (amount === undefined || amount === null) return '$0.00';
-  return new Intl.NumberFormat('en-US', {
+  if (amount === undefined || amount === null) return 'RS 0.00';
+  return new Intl.NumberFormat('en-INR', {
     style: 'currency',
-    currency: 'USD',
+    currency: 'INR',
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   }).format(amount);
@@ -21,7 +21,7 @@ export const formatPrice = (amount) => {
 export const formatDate = (dateInput) => {
   if (!dateInput) return '';
   const date = new Date(dateInput);
-  return new Intl.DateTimeFormat('en-US', {
+  return new Intl.DateTimeFormat('en-INR', {
     month: 'short',
     day: 'numeric',
     year: 'numeric',
